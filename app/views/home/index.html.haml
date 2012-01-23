@@ -1,3 +1,11 @@
-%h3 Home
-- @users.each do |user|
-  %p User: #{link_to user.name, user}
+= content_for :javascript_vars do
+	%script
+		:plain 
+			var dates=#{(1..30).collect(&:to_s)}
+			var habits=#{@result.headers} 
+
+= content_for :javascripts do
+	= javascript_include_tag "lib/raphael-min", "lib/g.raphael-min", "lib/g.dot-min", "home"
+
+%h3 Habits tracker
+#holder
