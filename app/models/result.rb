@@ -50,4 +50,5 @@ class Result
     attribute.strip.gsub(/[^0-9A-Za-z.\-]+/, '_').gsub(/_$/, '').downcase
   end
 
+
 end
