@@ -50,5 +50,13 @@ class Result
     attribute.strip.gsub(/[^0-9A-Za-z.\-]+/, '_').gsub(/_$/, '').downcase
   end
 
+  def which_habit
+    arr = []; (1..13).each{|num| 30.times{ arr << num}}
+    arr.reverse
+  end
 
+  def which_day
+    a = []; 13.times{a << (0..29).to_a}
+    a.flatten
+  end
 end
