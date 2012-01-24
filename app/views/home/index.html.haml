@@ -3,9 +3,11 @@
 		:plain 
 			var dates=#{(1..30).collect(&:to_s)}
 			var habits=#{@result.headers} 
-
+			var which_habit=#{@result.which_habit}
+			var which_day=#{@result.which_day}
 = content_for :javascripts do
 	= javascript_include_tag "lib/raphael-min", "lib/g.raphael-min", "lib/g.dot-min", "home"
 
 %h3 Habits tracker
 #holder
+ 
