@@ -6,8 +6,6 @@
 			var which_habit=#{@result.which_habit}
 			var which_day=#{@result.which_day}
 			var results=#{@result.output}
-= content_for :javascripts do
-	= javascript_include_tag "lib/g.raphael-min", "lib/g.dot-min"
 
 %h3 Habits tracker
 #holder

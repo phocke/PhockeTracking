@@ -8,4 +8,6 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require lib/raphael-min
+//= require lib/g.raphael-min
+//= require lib/g.dot-min
 //= require_tree .
